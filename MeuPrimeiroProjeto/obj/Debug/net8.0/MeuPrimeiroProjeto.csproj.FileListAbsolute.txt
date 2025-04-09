@@ -35,3 +35,4 @@
 /Users/robsonalves/s/ts/dotnet-returns/MeuPrimeiroProjeto/bin/Debug/net8.0/MeuPrimeiroProjeto.staticwebassets.endpoints.json
 /Users/robsonalves/s/ts/dotnet-returns/MeuPrimeiroProjeto/obj/Debug/net8.0/staticwebassets.build.endpoints.json
 /Users/robsonalves/s/ts/dotnet-returns/MeuPrimeiroProjeto/obj/Debug/net8.0/staticwebassets/msbuild.MeuPrimeiroProjeto.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+/Users/robsonalves/s/ts/dotnet-returns/MeuPrimeiroProjeto/obj/Debug/net8.0/MeuPrimeiroProjeto.sourcelink.json
