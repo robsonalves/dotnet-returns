@@ -166,3 +166,4 @@
 /Users/robsonalves/s/ts/dotnet-returns/MeuProjetoApiJwt/obj/Debug/net8.0/MeuProjetoApiJwt.pdb
 /Users/robsonalves/s/ts/dotnet-returns/MeuProjetoApiJwt/obj/Debug/net8.0/MeuProjetoApiJwt.genruntimeconfig.cache
 /Users/robsonalves/s/ts/dotnet-returns/MeuProjetoApiJwt/obj/Debug/net8.0/ref/MeuProjetoApiJwt.dll
+/Users/robsonalves/s/ts/dotnet-returns/MeuProjetoApiJwt/obj/Debug/net8.0/MeuProjetoApiJwt.sourcelink.json

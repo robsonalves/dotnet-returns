@@ -31,7 +31,8 @@ public class AuthController : ControllerBase
         {
             Username = request.Username,
             PasswordHash = HashPassword(request.Password),
-            Role =  request.Role.ToLower()
+            Role =  request.Role.ToLower(),
+            CanDelete = request.CanDelete
         };
 
         _context.Users.Add(user);
@@ -72,4 +73,5 @@ public class UserDto
     public required string Username { get; set; }
     public required string Password { get; set; }
     public string Role { get; set; } = "User";
+    public bool CanDelete { get; set; } = false; // Default permission
 }

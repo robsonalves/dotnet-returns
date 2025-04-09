@@ -34,7 +34,8 @@ public class TokenService
         {
             new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
             new Claim(ClaimTypes.Name, user.Username),
-            new Claim("canDelete", user.Role == "admin" ? "true" : "false")
+            new Claim("canDelete", user.CanDelete ? "true" : "false"),
+            new Claim(ClaimTypes.Role, user.Role ?? "user")
         };
 
         var token = new JwtSecurityToken(

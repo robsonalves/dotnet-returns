@@ -7,4 +7,5 @@ public class User
     public required string PasswordHash { get; set; }
 
     public string Role { get; set; } = "User"; // Default role
+    public bool CanDelete { get; set; } = false; // Default permission
 }

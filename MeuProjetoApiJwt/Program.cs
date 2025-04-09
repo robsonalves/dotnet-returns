@@ -1,6 +1,7 @@
 using MeuProjetoApiJwt.Data;
 using MeuProjetoApiJwt.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -10,8 +11,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<DataContext>(opt =>
     opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddScoped<TokenService>();
+builder.Services.AddSingleton<IAuthorizationHandler, DeletePermissionHandler>();
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("CanDelete", policy =>
+        policy.Requirements.Add(new DeletePermissionRequirement("sre")));
+});
 
+builder.Services.AddScoped<TokenService>();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
