@@ -1,0 +1,50 @@
+# Build Folders
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+*.sln.iml
+
+# DotNet
+*.dotnet/
+
+# NuGet
+*.nupkg
+.packages
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Visual Studio
+.vs/
+*.vcxproj*
+*.cache
+*.pdb
+
+# Other generated files
+*.dbmdl
+*.jfm
+
+# Local History for JetBrains IDEs
+localHistory/
+
+# Logs
+*.log
+
+# Mac
+.DS_Store
+
+# Others
+.idea/
+*.sln.ide
+*.sln.bin
+
